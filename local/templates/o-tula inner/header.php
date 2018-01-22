@@ -1,6 +1,8 @@
 <?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
 IncludeTemplateLangFile(__FILE__);
+#include_once($_SERVER["DOCUMENT_ROOT"]."/local/templates/.default/include/header.php");
 ?>
+
 <!DOCTYPE html>
 <html lang="ru-RU" class="no-js">
 <head>
@@ -72,16 +74,32 @@ img.emoji {
                 <div class="site-title wrapper">
                     <a href="http://o-tula.net/" rel="home" data-wpel-link="internal">Федерация спортивного ориентирования Тульской области</a>
                 </div><!-- .site-branding -->
-                                    <div id="site-header-menu" class="site-header-menu">
-                                                    <nav id="site-navigation" class="main-navigation wrapper" role="navigation" aria-label="Основное меню">
-                                <div class="menu-glavnoe-menyu-container"><ul id="menu-glavnoe-menyu" class="primary-menu"><li id="menu-item-725" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-725"><a href="/" data-wpel-link="internal">НОВОСТИ</a></li>
-<li id="menu-item-711" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-709 current_page_item menu-item-711"><a href="http://o-tula.net/federation/documents/" data-wpel-link="internal">Федерация</a></li>
-<li id="menu-item-716" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-716"><a href="http://o-tula.net/events/calendar/" data-wpel-link="internal">Соревнования</a></li>
-<li id="menu-item-636" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-636"><a href="http://o-tula.net/foto/" data-wpel-link="internal">Фото</a></li>
-<li id="menu-item-692" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-692"><a href="http://o-tula.net/guestbook/all_records/" data-wpel-link="internal">Гостевая</a></li>
-<li id="menu-item-697" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-697"><a href="http://o-tula.net/contacts/training/" data-wpel-link="internal">Контакты</a></li>
-</ul></div>                            </nav><!-- .main-navigation -->
-                                            </div><!-- .site-header-menu -->
+               <div id="site-header-menu" class="site-header-menu">                            
+ <nav id="site-navigation" class="main-navigation wrapper" role="navigation" aria-label="Основное меню">
+                                <div class="menu-glavnoe-menyu-container">                     
+                                                    <?$APPLICATION->IncludeComponent(
+    "bitrix:menu", 
+    "top_menu", 
+    array(
+        "COMPONENT_TEMPLATE" => "top_menu",
+        "ROOT_MENU_TYPE" => "top",
+        "MENU_CACHE_TYPE" => "N",
+        "MENU_CACHE_TIME" => "3600",
+        "MENU_CACHE_USE_GROUPS" => "Y",
+        "MENU_CACHE_GET_VARS" => array(
+        ),
+        "MAX_LEVEL" => "1",
+        "CHILD_MENU_TYPE" => "left",
+        "USE_EXT" => "Y",
+        "DELAY" => "N",
+        "ALLOW_MULTI_SELECT" => "N"
+    ),
+    false
+);?>
+                                </div>
+</nav>
+</div><!-- .site-header-menu --><!-- .main-navigation -->
+                                            
                             </div><!-- .site-header-main -->
 
                     </header><!-- .site-header -->
