@@ -72,7 +72,7 @@ img.emoji {
         <header id="masthead" class="site-header" role="banner">
             <div class="site-header-main">
                 <div class="site-title wrapper">
-                    <a href="http://o-tula.net/" rel="home" data-wpel-link="internal">Федерация спортивного ориентирования Тульской области</a>
+                    <a href="http://dev-o-tula.webgk.ru" rel="home" data-wpel-link="internal">Федерация спортивного ориентирования Тульской области</a>
                 </div><!-- .site-branding -->
                <div id="site-header-menu" class="site-header-menu">                            
  <nav id="site-navigation" class="main-navigation wrapper" role="navigation" aria-label="Основное меню">
@@ -108,7 +108,16 @@ img.emoji {
     <div id="primary" class="content-area guestbook">
         <main id="main" class="site-main" role="main">
     <div class="wrapper">
-
+    <?$APPLICATION->IncludeComponent(
+    "bitrix:breadcrumb",
+    "template1",
+    Array(
+        "COMPONENT_TEMPLATE" => ".default",
+        "PATH" => "",
+        "SITE_ID" => "s1",
+        "START_FROM" => "0"
+    )
+);?>
         <div class="breadcrumbs" typeof="BreadcrumbList" vocab="https://schema.org/">
                 <!-- Breadcrumb NavXT 5.7.0 -->
       <span property="itemListElement" typeof="ListItem">
