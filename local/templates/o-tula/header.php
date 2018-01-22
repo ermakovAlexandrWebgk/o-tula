@@ -9,7 +9,7 @@ IncludeTemplateLangFile(__FILE__);
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
     <link rel="profile" href="http://gmpg.org/xfn/11">
         <script>(function(html){html.className = html.className.replace(/\bno-js\b/,'js')})(document.documentElement);</script>
-<title>Федерация спортивного ориентирования Тульской области &#8211; Спортивное Ориентирование в Тульской области</title>
+<title><?$APPLICATION->ShowTitle()?></title>
 <link rel='dns-prefetch' href='//fonts.googleapis.com' />
 <link rel='dns-prefetch' href='//s.w.org' />
 <link rel="alternate" type="application/rss+xml" title="Федерация спортивного ориентирования Тульской области &raquo; Лента" href="http://o-tula.net/feed/" />

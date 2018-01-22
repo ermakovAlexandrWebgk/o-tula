@@ -2,13 +2,6 @@
 <?
 $aMenuLinks = Array(
 	Array(
-		"Компания", 
-		"company/", 
-		Array(), 
-		Array(), 
-		"" 
-	),
-	Array(
 		"Новости", 
 		"news/", 
 		Array(), 
@@ -16,25 +9,39 @@ $aMenuLinks = Array(
 		"" 
 	),
 	Array(
-		"Продукция", 
-		"products/", 
+		"Федерация", 
+		"federatsiya/", 
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
-		"Услуги", 
-		"services/", 
+		"Соревнования", 
+		"sorevnovaniya/", 
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
-		"Контакты", 
-		"contacts/", 
+		"Фото", 
+		"foto/", 
 		Array(), 
 		Array(), 
 		"" 
-	)
+	),
+	Array(
+		"Гостевая", 
+		"gostevaya/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+    Array(
+        "Народный бюджет", 
+        "", 
+        Array(), 
+        Array(), 
+        "" 
+    )
 );
 ?>

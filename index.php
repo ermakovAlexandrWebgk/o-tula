@@ -1,6 +1,6 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetTitle("Мебельная компания");
+$APPLICATION->SetTitle("Федерация спортивного ориентирования Тульской области &#8211; Спортивное Ориентирование в Тульской области");
 ?>			<h1>Новости</h1>
 								<div class="news_post">
 						<div class="news_date">
