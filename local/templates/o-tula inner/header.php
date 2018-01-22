@@ -2,14 +2,14 @@
 IncludeTemplateLangFile(__FILE__);
 ?>
 <!DOCTYPE html>
-<html lang="<?=LANGUAGE_ID?>" class="no-js">
+<html lang="ru-RU" class="no-js">
 <head>
     <?$APPLICATION->ShowHead();?>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
     <link rel="profile" href="http://gmpg.org/xfn/11">
         <script>(function(html){html.className = html.className.replace(/\bno-js\b/,'js')})(document.documentElement);</script>
-<title>Федерация спортивного ориентирования Тульской области &#8211; Спортивное Ориентирование в Тульской области</title>
+<title>Секции &#8211; Федерация спортивного ориентирования Тульской области</title>
 <link rel='dns-prefetch' href='//fonts.googleapis.com' />
 <link rel='dns-prefetch' href='//s.w.org' />
 <link rel="alternate" type="application/rss+xml" title="Федерация спортивного ориентирования Тульской области &raquo; Лента" href="http://o-tula.net/feed/" />
@@ -58,10 +58,13 @@ img.emoji {
 <link rel='https://api.w.org/' href='http://o-tula.net/wp-json/' />
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://o-tula.net/xmlrpc.php?rsd" />
 <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://o-tula.net/wp-includes/wlwmanifest.xml" /> 
+<link rel="alternate" type="application/json+oembed" href="http://o-tula.net/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fo-tula.net%2Fcontacts%2Ftraining%2F" />
+<link rel="alternate" type="text/xml+oembed" href="http://o-tula.net/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fo-tula.net%2Fcontacts%2Ftraining%2F&#038;format=xml" />
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
-<body class="home blog locale-ru-ru no-sidebar hfeed">
-<?$APPLICATION->ShowPanel();?>
+
+<body class="page-template-default page page-id-709 locale-ru-ru no-sidebar">
+<?$APPLICATION->ShowPanel()?>
 <div id="page" class="site">
     <div class="site-inner">
         <header id="masthead" class="site-header" role="banner">
@@ -71,8 +74,8 @@ img.emoji {
                 </div><!-- .site-branding -->
                                     <div id="site-header-menu" class="site-header-menu">
                                                     <nav id="site-navigation" class="main-navigation wrapper" role="navigation" aria-label="Основное меню">
-                                <div class="menu-glavnoe-menyu-container"><ul id="menu-glavnoe-menyu" class="primary-menu"><li id="menu-item-725" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-725"><a href="/" data-wpel-link="internal">НОВОСТИ</a></li>
-<li id="menu-item-711" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-711"><a href="http://o-tula.net/federation/documents/" data-wpel-link="internal">Федерация</a></li>
+                                <div class="menu-glavnoe-menyu-container"><ul id="menu-glavnoe-menyu" class="primary-menu"><li id="menu-item-725" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-725"><a href="/" data-wpel-link="internal">НОВОСТИ</a></li>
+<li id="menu-item-711" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-709 current_page_item menu-item-711"><a href="http://o-tula.net/federation/documents/" data-wpel-link="internal">Федерация</a></li>
 <li id="menu-item-716" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-716"><a href="http://o-tula.net/events/calendar/" data-wpel-link="internal">Соревнования</a></li>
 <li id="menu-item-636" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-636"><a href="http://o-tula.net/foto/" data-wpel-link="internal">Фото</a></li>
 <li id="menu-item-692" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-692"><a href="http://o-tula.net/guestbook/all_records/" data-wpel-link="internal">Гостевая</a></li>
@@ -82,11 +85,31 @@ img.emoji {
                             </div><!-- .site-header-main -->
 
                     </header><!-- .site-header -->
-                    <div id="content" class="site-content">
-<div id="primary" class="content-area">
-    <main id="main" class="site-main" role="main">
-        <div class="front_img">
-            <img width="1200" height="573" src="http://o-tula.net/uploads/2017/02/Bezimeni-1-1200x573.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="http://o-tula.net/uploads/2017/02/Bezimeni-1-1200x573.jpg 1200w, http://o-tula.net/uploads/2017/02/Bezimeni-1-300x143.jpg 300w, http://o-tula.net/uploads/2017/02/Bezimeni-1-768x367.jpg 768w, http://o-tula.net/uploads/2017/02/Bezimeni-1-1024x489.jpg 1024w" sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 88vw, 1200px" />        </div>
 
-        <div class="wrapper news">
-                    
+        <div id="content" class="site-content">
+    <div id="primary" class="content-area guestbook">
+        <main id="main" class="site-main" role="main">
+    <div class="wrapper">
+
+        <div class="breadcrumbs" typeof="BreadcrumbList" vocab="https://schema.org/">
+                <!-- Breadcrumb NavXT 5.7.0 -->
+      <span property="itemListElement" typeof="ListItem">
+        <a property="item" typeof="WebPage" title="Go to Гостевая." href="/federation/documents/" class="post post-page" data-wpel-link="internal"><span property="name">Федерация</span></a><meta property="position" content="1">
+      </span>
+      <span property="itemListElement" typeof="ListItem">
+        <span property="name">Документы</span>
+        <meta property="position" content="2"></span>                
+      </div>
+          <div class="guest_tabs">
+            <div class="all_posts active">
+                        ДОКУМЕНТЫ 
+                </div>
+      
+        </div>
+    
+<article id="post-709" class="post-709 page type-page status-publish hentry">
+    <header class="entry-header">
+        <h1 class="entry-title">Документы</h1>    </header><!-- .entry-header -->
+
+    
+    <div class="entry-content">

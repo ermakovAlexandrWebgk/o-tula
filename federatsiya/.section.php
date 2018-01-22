@@ -1,0 +1,6 @@
+<?
+$sSectionName = "Федерация";
+$arDirProperties = Array(
+
+);
+?>

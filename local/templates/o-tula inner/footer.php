@@ -1,13 +1,18 @@
 <?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
 IncludeTemplateLangFile(__FILE__);
 ?>
-</div>     
-    </main><!-- .site-main -->
+</div><!-- .entry-content -->
 
     
-</div><!-- .content-area -->
+</article><!-- #post-## -->
+  </div>
+    </main><!-- .site-main -->
+    </div><!-- .content-area -->
+    
+
+
         </div><!-- .site-content -->
-<footer id="colophon" class="site-footer" role="contentinfo">
+        <footer id="colophon" class="site-footer" role="contentinfo">
             <div class="footer_bottom">
                 <div class="wrapper">
                         © 2018 Общественная организация "Федерация спортивного ориентирования Тульской области"
@@ -20,13 +25,12 @@ IncludeTemplateLangFile(__FILE__);
 /* <![CDATA[ */
 var screenReaderText = {"expand":"\u0440\u0430\u0441\u043a\u0440\u044b\u0442\u044c \u0434\u043e\u0447\u0435\u0440\u043d\u0435\u0435 \u043c\u0435\u043d\u044e","collapse":"\u0441\u0432\u0435\u0440\u043d\u0443\u0442\u044c \u0434\u043e\u0447\u0435\u0440\u043d\u0435\u0435 \u043c\u0435\u043d\u044e"};
 /* ]]> */
-</script>
 <script type="text/foobox">/* Run FooBox FREE (v1.2.27) */
 (function( FOOBOX, $, undefined ) {
   FOOBOX.o = {wordpress: { enabled: true }, countMessage:'Фото %index из %total', excludes:'.fbx-link,.nofoobox,.nolightbox,a[href*="pinterest.com/pin/create/button/"]', affiliate : { enabled: false }, error: "Could not load the item"};
   FOOBOX.init = function() {
     $(".fbx-link").removeClass("fbx-link");
-    $(".foogallery-container.foogallery-lightbox-foobox, .foogallery-container.foogallery-lightbox-foobox-free, .gallery, .wp-caption, a:has(img[class*=wp-image-]), .post a:has(img[class*=wp-image-]), .foobox").foobox(FOOBOX.o);
+    $(".foogallery-container.foogallery-lightbox-foobox, .foogallery-container.foogallery-lightbox-foobox-free, .gallery, .wp-caption, a:has(img[class*=wp-image-]), .foobox").foobox(FOOBOX.o);
   };
 }( window.FOOBOX = window.FOOBOX || {}, FooBox.$ ));
 
