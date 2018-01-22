@@ -5,7 +5,6 @@ IncludeTemplateLangFile(__FILE__);
 <html lang="<?=LANGUAGE_ID?>" class="no-js">
 <head>
     <?$APPLICATION->ShowHead();?>
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
     <link rel="profile" href="http://gmpg.org/xfn/11">
@@ -33,10 +32,10 @@ img.emoji {
     padding: 0 !important;
 }
 </style>
-<link rel='stylesheet' id='foobox-free-min-css'  href='http://o-tula.net/wp-content/plugins/foobox-image-lightbox/free/css/foobox.free.min.css?ver=1.2.27' type='text/css' media='all' />
-<link rel='stylesheet' id='twentysixteen-fonts-css'  href='https://fonts.googleapis.com/css?family=Inconsolata%3A400&#038;subset=latin%2Clatin-ext' type='text/css' media='all' />
-<link rel='stylesheet' id='genericons-css'  href='http://o-tula.net/wp-content/themes/otula/genericons/genericons.css?ver=3.4.1' type='text/css' media='all' />
-<link rel='stylesheet' id='twentysixteen-style-css'  href='http://o-tula.net/wp-content/themes/otula/style.css?ver=4.9.2' type='text/css' media='all' />
+<?$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/css/foobox.free.min.css")?>
+<?$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/css/genericons.css")?>
+ <?$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/css/style.css")?>
+ <?$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/css/twentysixteen.fonts.css")?>
 <!--[if lt IE 10]>
 <link rel='stylesheet' id='twentysixteen-ie-css'  href='http://o-tula.net/wp-content/themes/otula/css/ie.css?ver=20160816' type='text/css' media='all' />
 <![endif]-->
@@ -49,16 +48,18 @@ img.emoji {
 <!--[if lt IE 9]>
 <script type='text/javascript' src='http://o-tula.net/wp-content/themes/otula/js/html5.js?ver=3.7.3'></script>
 <![endif]-->
-<script type='text/javascript' src='http://o-tula.net/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
-<script type='text/javascript' src='http://o-tula.net/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
-<script type='text/javascript' src='http://o-tula.net/wp-content/plugins/foobox-image-lightbox/free/js/foobox.free.min.js?ver=1.2.27'></script>
+<?$APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/js/jquery/jquery.js")?>
+<?$APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/js/jquery/jquery-migrate.min.js")?>
+<?$APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/js/foobox.free.min.js")?>
+<?$APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/js/functions.js")?>
+<?$APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/js/new-tab.min.js")?>
+<?$APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/js/skip-link-focus-fix.js")?>
+<?$APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/js/wp-embed.min.js")?>
 <link rel='https://api.w.org/' href='http://o-tula.net/wp-json/' />
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://o-tula.net/xmlrpc.php?rsd" />
 <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://o-tula.net/wp-includes/wlwmanifest.xml" /> 
-<meta name="generator" content="WordPress 4.9.2" />
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
-
 <body class="home blog locale-ru-ru no-sidebar hfeed">
 <?$APPLICATION->ShowPanel();?>
 <div id="page" class="site">
