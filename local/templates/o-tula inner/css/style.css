@@ -368,17 +368,29 @@ a.disabled {
 
 .guest_tabs .all_posts {
     margin-bottom: 4px;
-    height: 36px;
-}
-
-.guest_tabs .all_posts a, .all_posts.active {
+    height: 40px;
+    width: 140px;
     display: inline-block;
-    padding: 10px 0px 0px 10px;
+    /*padding: 10px 0px 0px 10px;*/
     line-height: 0px;
     background: #e1e1e1;
 }
-.guest_tabs .all_posts a: hover{
-    background: #43c7db;;
+.guest_tabs .all_posts:hover{
+    border-radius: 2px 2px 2px 2px;
+    background: #848182;
+}
+
+.guest_tabs .all_posts a{
+    display: inline-block;
+    padding: 20px 0px 0px 20px;
+    line-height: 0px;
+    
+}
+.guest_tabs .all_posts .active{
+    display: inline-block;
+    padding: 10px 0px 0px 10px;
+    line-height: 0px;
+    background: #43c7db;
 }
 
 .guest_tabs a {
@@ -535,6 +547,7 @@ li.comment:last-child {
 }
 .all_posts.active {
     width: 100% !important;
+    background: #43c7db;
 }
 .entry-content {
     font-size: 17px;
