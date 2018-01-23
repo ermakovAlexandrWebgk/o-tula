@@ -23,7 +23,9 @@ body {
 
 html, body, #page {
     height: 100%;
-    min-width: 1346px
+    width: 100%;
+    max-width: 100%;
+    min-width: 70%;
 }
 
 .site-inner {
@@ -343,7 +345,9 @@ article.post>p {
     position: fixed;;
     top: 295px;
     left: 0;
-    font-size: 14.5px;
+    width: 140px;
+    height: 45px;
+    font-size: 12px;
     text-transform: uppercase;
 }
 
@@ -357,20 +361,24 @@ a.disabled {
 }
 
 .guest_tabs .add_posts  {
-    padding: 16px 13px 16px 13px;
+    padding: 10px 0px 0px 10px;
     line-height: 0px;
     background: #e1e1e1;
 }
 
 .guest_tabs .all_posts {
     margin-bottom: 4px;
+    height: 36px;
 }
 
 .guest_tabs .all_posts a, .all_posts.active {
     display: inline-block;
-    padding: 16px 13px 16px 13px;
+    padding: 10px 0px 0px 10px;
     line-height: 0px;
     background: #e1e1e1;
+}
+.guest_tabs .all_posts a: hover{
+    background: #43c7db;;
 }
 
 .guest_tabs a {
@@ -450,7 +458,7 @@ a.prev.page-numbers:hover {
   bottom: 0;
   margin: auto;
   right: 0;
-  background: url(img/cur-right-active.png);
+  background: url('cur-right-active.png');
   background-size: cover;
 }
 

@@ -108,31 +108,33 @@ img.emoji {
     <div id="primary" class="content-area guestbook">
         <main id="main" class="site-main" role="main">
     <div class="wrapper">
-    <?$APPLICATION->IncludeComponent(
-    "bitrix:breadcrumb",
-    "template1",
+    <?$APPLICATION->IncludeComponent("bitrix:breadcrumb", "breadcrumb", Array(
+	"COMPONENT_TEMPLATE" => ".default",
+		"PATH" => "",	// Путь, для которого будет построена навигационная цепочка (по умолчанию, текущий путь)
+		"SITE_ID" => "s1",	// Cайт (устанавливается в случае многосайтовой версии, когда DOCUMENT_ROOT у сайтов разный)
+		"START_FROM" => "0",	// Номер пункта, начиная с которого будет построена навигационная цепочка
+	),
+	false
+);?>
+       
+         
+        <?$APPLICATION->IncludeComponent(
+    "bitrix:menu",
+    "lef_menu",
     Array(
-        "COMPONENT_TEMPLATE" => ".default",
-        "PATH" => "",
-        "SITE_ID" => "s1",
-        "START_FROM" => "0"
+        "ALLOW_MULTI_SELECT" => "N",
+        "CHILD_MENU_TYPE" => "left",
+        "COMPONENT_TEMPLATE" => "vertical_multilevel",
+        "DELAY" => "N",
+        "MAX_LEVEL" => "1",
+        "MENU_CACHE_GET_VARS" => "",
+        "MENU_CACHE_TIME" => "3600",
+        "MENU_CACHE_TYPE" => "N",
+        "MENU_CACHE_USE_GROUPS" => "Y",
+        "ROOT_MENU_TYPE" => "left",
+        "USE_EXT" => "Y"
     )
 );?>
-        <div class="breadcrumbs" typeof="BreadcrumbList" vocab="https://schema.org/">
-                <!-- Breadcrumb NavXT 5.7.0 -->
-      <span property="itemListElement" typeof="ListItem">
-        <a property="item" typeof="WebPage" title="Go to Гостевая." href="/federation/documents/" class="post post-page" data-wpel-link="internal"><span property="name">Федерация</span></a><meta property="position" content="1">
-      </span>
-      <span property="itemListElement" typeof="ListItem">
-        <span property="name">Документы</span>
-        <meta property="position" content="2"></span>                
-      </div>
-          <div class="guest_tabs">
-            <div class="all_posts active">
-                        ДОКУМЕНТЫ 
-                </div>
-      
-        </div>
     
 <article id="post-709" class="post-709 page type-page status-publish hentry">
     <header class="entry-header">
