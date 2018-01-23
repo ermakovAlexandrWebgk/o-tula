@@ -103,7 +103,9 @@ img.emoji {
             src="http://o-tula.net/uploads/2017/02/Bezimeni-1-1200x573.jpg" 
             class="attachment-post-thumbnail size-post-thumbnail wp-post-image" 
             alt="" 
-            srcset="http://o-tula.net/uploads/2017/02/Bezimeni-1-1200x573.jpg 1200w, http://o-tula.net/uploads/2017/02/Bezimeni-1-300x143.jpg 300w, http://o-tula.net/uploads/2017/02/Bezimeni-1-768x367.jpg 768w, http://o-tula.net/uploads/2017/02/Bezimeni-1-1024x489.jpg 1024w" sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 88vw, 1200px" />        </div>
+            srcset="http://o-tula.net/uploads/2017/02/Bezimeni-1-1200x573.jpg 1200w, http://o-tula.net/uploads/2017/02/Bezimeni-1-300x143.jpg 300w, http://o-tula.net/uploads/2017/02/Bezimeni-1-768x367.jpg 768w, http://o-tula.net/uploads/2017/02/Bezimeni-1-1024x489.jpg 1024w" sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 88vw, 1200px" />        
+            </div>
+        <div class="wrapper news">                  
+            <h1><?$APPLICATION->ShowTitle(false)?></h1>
 
-        <div class="wrapper news">
                     
