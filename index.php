@@ -1,6 +1,7 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetTitle("Федерация спортивного ориентирования Тульской области &#8211; Спортивное Ориентирование в Тульской области");
+$APPLICATION->SetPageProperty("title", "Федерация спортивного ориентирования Тульской области – Спортивное Ориентирование в Тульской области");
+$APPLICATION->SetTitle("Новости");
 ?><?$APPLICATION->IncludeComponent(
 	"bitrix:news", 
 	"main_page_news", 
@@ -30,7 +31,7 @@ $APPLICATION->SetTitle("Федерация спортивного ориенти
 		"CACHE_FILTER" => "N",
 		"CACHE_GROUPS" => "Y",
 		"SET_LAST_MODIFIED" => "N",
-		"SET_TITLE" => "Y",
+		"SET_TITLE" => "N",
 		"INCLUDE_IBLOCK_INTO_CHAIN" => "Y",
 		"ADD_SECTIONS_CHAIN" => "Y",
 		"ADD_ELEMENT_CHAIN" => "N",
