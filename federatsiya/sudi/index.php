@@ -3,7 +3,7 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Судьи");
 ?><?$APPLICATION->IncludeComponent(
 	"bitrix:news", 
-	"flat", 
+	"judges", 
 	array(
 		"ADD_ELEMENT_CHAIN" => "Y",
 		"ADD_SECTIONS_CHAIN" => "N",
@@ -83,7 +83,7 @@ $APPLICATION->SetTitle("Судьи");
 		"USE_RSS" => "N",
 		"USE_SEARCH" => "N",
 		"USE_SHARE" => "N",
-		"COMPONENT_TEMPLATE" => "flat",
+		"COMPONENT_TEMPLATE" => "judges",
 		"TEMPLATE_THEME" => "blue",
 		"MEDIA_PROPERTY" => "",
 		"SLIDER_PROPERTY" => "",
