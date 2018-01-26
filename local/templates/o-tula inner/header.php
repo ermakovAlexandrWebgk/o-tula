@@ -34,29 +34,29 @@ img.emoji {
     padding: 0 !important;
 }
 </style>
-<?$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/css/foobox.free.min.css")?>
+<!--bootstrap-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css"> 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<!--/bootstrap-->
+    
+<script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+<!--fancybox-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.css" />
+<script type="text/javascript">
+      $(document).ready(function() {
+         $("a#single_img").fancybox({'showNavArrows': 'true','scrolling' : 'true'});         
+      });
+ </script>
+<!--/fancybox-->
 <?$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/css/genericons.css")?>
  <?$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/css/style.css")?>
  <?$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/css/twentysixteen.fonts.css")?>
-<!--[if lt IE 10]>
-<link rel='stylesheet' id='twentysixteen-ie-css'  href='http://o-tula.net/wp-content/themes/otula/css/ie.css?ver=20160816' type='text/css' media='all' />
-<![endif]-->
-<!--[if lt IE 9]>
-<link rel='stylesheet' id='twentysixteen-ie8-css'  href='http://o-tula.net/wp-content/themes/otula/css/ie8.css?ver=20160816' type='text/css' media='all' />
-<![endif]-->
-<!--[if lt IE 8]>
-<link rel='stylesheet' id='twentysixteen-ie7-css'  href='http://o-tula.net/wp-content/themes/otula/css/ie7.css?ver=20160816' type='text/css' media='all' />
-<![endif]-->
-<!--[if lt IE 9]>
-<script type='text/javascript' src='http://o-tula.net/wp-content/themes/otula/js/html5.js?ver=3.7.3'></script>
-<![endif]-->
 <?$APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/js/jquery/jquery.js")?>
 <?$APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/js/jquery/jquery-migrate.min.js")?>
-<?$APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/js/foobox.free.min.js")?>
 <?$APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/js/functions.js")?>
 <?$APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/js/new-tab.min.js")?>
 <?$APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/js/skip-link-focus-fix.js")?>
-<?$APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/js/wp-embed.min.js")?>
 <link rel='https://api.w.org/' href='http://o-tula.net/wp-json/' />
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://o-tula.net/xmlrpc.php?rsd" />
 <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://o-tula.net/wp-includes/wlwmanifest.xml" /> 
