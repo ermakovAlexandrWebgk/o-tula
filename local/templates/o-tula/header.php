@@ -6,39 +6,15 @@ IncludeTemplateLangFile(__FILE__);
 <html lang="<?=LANGUAGE_ID?>" class="no-js">
 <head>
     <?$APPLICATION->ShowHead();?>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
-    <link rel="profile" href="http://gmpg.org/xfn/11">
-        <script>(function(html){html.className = html.className.replace(/\bno-js\b/,'js')})(document.documentElement);</script>
-<title><?$APPLICATION->ShowTitle()?></title>
-<link rel='dns-prefetch' href='//fonts.googleapis.com' />
-<link rel='dns-prefetch' href='//s.w.org' />
-<link rel="alternate" type="application/rss+xml" title="Федерация спортивного ориентирования Тульской области &raquo; Лента" href="http://o-tula.net/feed/" />
-<link rel="alternate" type="application/rss+xml" title="Федерация спортивного ориентирования Тульской области &raquo; Лента комментариев" href="http://o-tula.net/comments/feed/" />
-        
-<?$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/css/foobox.free.min.css")?>
+<title><?$APPLICATION->ShowTitle()?></title>        
 <?$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/css/genericons.css")?>
- <?$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/css/style.css")?>
- <?$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/css/twentysixteen.fonts.css")?>
-<!--[if lt IE 10]>
-<link rel='stylesheet' id='twentysixteen-ie-css'  href='http://o-tula.net/wp-content/themes/otula/css/ie.css?ver=20160816' type='text/css' media='all' />
-<![endif]-->
-<!--[if lt IE 9]>
-<link rel='stylesheet' id='twentysixteen-ie8-css'  href='http://o-tula.net/wp-content/themes/otula/css/ie8.css?ver=20160816' type='text/css' media='all' />
-<![endif]-->
-<!--[if lt IE 8]>
-<link rel='stylesheet' id='twentysixteen-ie7-css'  href='http://o-tula.net/wp-content/themes/otula/css/ie7.css?ver=20160816' type='text/css' media='all' />
-<![endif]-->
-<!--[if lt IE 9]>
-<script type='text/javascript' src='http://o-tula.net/wp-content/themes/otula/js/html5.js?ver=3.7.3'></script>
-<![endif]-->
+<?$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/css/style.css")?>
+<?$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/css/twentysixteen.fonts.css")?>
 <?$APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/js/jquery/jquery.js")?>
 <?$APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/js/jquery/jquery-migrate.min.js")?>
-<?$APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/js/foobox.free.min.js")?>
 <?$APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/js/functions.js")?>
 <?$APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/js/new-tab.min.js")?>
 <?$APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/js/skip-link-focus-fix.js")?>
-<?$APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/js/wp-embed.min.js")?>
  
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
@@ -80,11 +56,10 @@ IncludeTemplateLangFile(__FILE__);
 <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
         <div class="front_img">
-            <img width="1200" height="573" 
-            src="http://o-tula.net/uploads/2017/02/Bezimeni-1-1200x573.jpg" 
+            <img 
+            src="<?=SITE_TEMPLATE_PATH?>/img/Bezimeni-1-1200x573.jpg" 
             class="attachment-post-thumbnail size-post-thumbnail wp-post-image" 
-            alt="" 
-            srcset="http://o-tula.net/uploads/2017/02/Bezimeni-1-1200x573.jpg 1200w, http://o-tula.net/uploads/2017/02/Bezimeni-1-300x143.jpg 300w, http://o-tula.net/uploads/2017/02/Bezimeni-1-768x367.jpg 768w, http://o-tula.net/uploads/2017/02/Bezimeni-1-1024x489.jpg 1024w" sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 88vw, 1200px" />        
+            alt=""/>        
             </div>
         <div class="wrapper news">                  
             <h1><?$APPLICATION->ShowTitle(false)?></h1>
