@@ -10,13 +10,7 @@ IncludeTemplateLangFile(__FILE__);
 <?$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/css/genericons.css")?>
 <?$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/css/style.css")?>
 <?$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/css/twentysixteen.fonts.css")?>
-<?$APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/js/jquery/jquery.js")?>
-<?$APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/js/jquery/jquery-migrate.min.js")?>
-<?$APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/js/functions.js")?>
-<?$APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/js/new-tab.min.js")?>
-<?$APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/js/skip-link-focus-fix.js")?>
- 
-<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<?$APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/js/jquery/jquery-3.3.1.js")?>
 </head>
 <body class="home blog locale-ru-ru no-sidebar hfeed">
 <?$APPLICATION->ShowPanel();?>

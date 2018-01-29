@@ -534,7 +534,5 @@ li.comment:last-child {
     font-size: 17px;
     font-family: 'Roboto', sans-serif;
     letter-spacing: -0.8px;
-}
-.main_img{
-        
-}
+} 
+.show_photo {padding-bottom: 40px;}            
