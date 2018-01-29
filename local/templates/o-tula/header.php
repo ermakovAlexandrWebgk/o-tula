@@ -17,7 +17,7 @@ IncludeTemplateLangFile(__FILE__);
 <div id="page" class="site">
     <div class="site-inner">
         <header id="masthead" class="site-header" role="banner">
-            <div class="site-header-main">
+            <div class="site-header-main"> 
                 <div class="site-title wrapper">
                     <a href="http://dev-o-tula.webgk.ru/" rel="home" data-wpel-link="internal">Федерация спортивного ориентирования Тульской области</a>
                 </div><!-- .site-branding -->
