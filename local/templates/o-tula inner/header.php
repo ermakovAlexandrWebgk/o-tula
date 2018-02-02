@@ -32,6 +32,7 @@ IncludeTemplateLangFile(__FILE__);
  <?$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/css/style.css")?>
  <?$APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/css/twentysixteen.fonts.css")?>
 <?$APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH."/js/jquery/jquery-3.3.1.js")?>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
 <body class="page-template-default page page-id-709 locale-ru-ru no-sidebar">
 <?$APPLICATION->ShowPanel()?>

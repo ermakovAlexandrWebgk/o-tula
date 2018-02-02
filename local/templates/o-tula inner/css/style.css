@@ -486,7 +486,7 @@ article.post, .news_post {
     }
 }
 span.post_author_my {
-    background: url(img/econ.png);
+    background: url(/upload/econ.png);
     display: block;
     background-repeat: no-repeat;
     padding-left: 18px;
