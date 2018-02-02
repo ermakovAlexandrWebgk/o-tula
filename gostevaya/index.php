@@ -9,7 +9,7 @@ $APPLICATION->SetTitle("Гостевая");
 		"IBLOCK_TYPE" => "guests",
 		"IBLOCK_ID" => "9",
 		"NEWS_COUNT" => "20",
-		"SORT_BY1" => "ACTIVE_FROM",
+		"SORT_BY1" => "ID",
 		"SORT_ORDER1" => "DESC",
 		"SORT_BY2" => "SORT",
 		"SORT_ORDER2" => "ASC",

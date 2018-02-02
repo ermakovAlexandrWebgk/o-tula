@@ -2,7 +2,7 @@
 $aMenuLinks = Array(
 	Array(
 		"Все записи", 
-		"/gostevaya/index.php", 
+		"/gostevaya/", 
 		Array(), 
 		Array(), 
 		"" 
