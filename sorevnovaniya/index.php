@@ -74,7 +74,7 @@ $APPLICATION->SetTitle("Соревнования");
 		"PREVIEW_TRUNCATE_LEN" => "",
 		"PROPERTY_CODE" => array(
 			0 => "",
-			1 => "",
+			1 => "FILE",
 		),
 		"SET_BROWSER_TITLE" => "Y",
 		"SET_LAST_MODIFIED" => "N",

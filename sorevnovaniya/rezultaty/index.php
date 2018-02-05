@@ -50,7 +50,7 @@ $last_comp = array("<DATE_ACTIVE_TO"=>date("d.m.Y 00:00:00"));
 		),
 		"PROPERTY_CODE" => array(
 			0 => "",
-			1 => "",
+			1 => "FILE",
 		),
 		"CHECK_DATES" => "N",
 		"DETAIL_URL" => "",
